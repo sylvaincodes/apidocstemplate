@@ -1,0 +1,54 @@
+/* ----------------------
+    - Sidebar CSS
+--------------------------*/
+
+.btn-sidebar{
+    display:none;
+}
+
+.collapsible.active{
+    transform: translateX(0%) !important;
+}
+
+.left-sidebar .collapsible{
+    position: absolute;
+    left: 0;
+    top: 87px;
+    background: var(--white);
+    box-shadow: var(--shadow-2);
+    z-index: 9999;
+    transform: translateX(-100%);
+    transition: var(--transition-0);
+    height: 100vh;
+    width: 250px;
+    overflow-y: auto;
+}
+
+.menu-item{
+    background: var(--first-color);
+    padding: 1rem;
+}
+
+.collapsible-body{
+    background: var(--white);
+    padding-inline-start: 1rem;
+    padding-block: 1rem;
+    color:black
+}
+
+.sousmenu-item:hover{
+    transform: translateX(10%);
+    transition: var(--transition-1);
+}
+.sousmenu-item {
+    padding-block:0.5rem ;
+}
+.sousmenu-item i{
+    font-size: 1.1rem;
+    color:black
+}
+
+.sousmenu-item span{
+    font-size: 1.1rem;
+    color:black
+}

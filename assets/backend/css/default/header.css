@@ -1,0 +1,55 @@
+/* ------------------------
+    - Header CSS
+--------------------------*/
+.header{
+    width:inherit;
+    display: grid;
+    grid-template-columns : 1fr auto; 
+    position:fixed;
+    box-shadow:var(--shadow-2);
+    padding: 1rem;
+    transform: translateY(-70%);
+    transition : var(--transition-1);
+    z-index: 999999;
+    color: var(--white);
+    background: var(--first-color);
+}
+
+.header i{
+    color: var(--white);
+}
+
+.header:hover{
+    transform: translateY(0%);
+    transition : var(--transition-1);
+    cursor:pointer;
+    box-shadow: var(--shadow-6);
+}
+
+.header .icon-sm{
+    font-weight:bold;
+    font-size:var(--fs-7);
+}
+
+
+.header .logo :is(.dark-logo,.light-logo){
+    position: absolute;
+    left: 0;
+    top: -2px;
+    height: -webkit-fill-available;
+}
+
+.profile-user{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.profile-user a{
+    display: inline-flex;
+    align-items: center;
+}
+
+.img-circle{
+    border-radius:var(--radius-circle);
+}

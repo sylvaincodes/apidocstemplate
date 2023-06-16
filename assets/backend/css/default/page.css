@@ -1,0 +1,183 @@
+/* ------------------------
+    - Page CSS
+--------------------------*/
+
+.page{
+    width:100vw;
+    height:100vh;
+}
+
+.page .container:nth-child(1) {
+    padding-top:3rem;
+}
+
+.page-content{
+    padding-bottom: 3rem;
+}
+
+.card{
+    box-shadow : var(--shadow-2);
+    width:100%;
+    display:flex;
+    padding:4rem 3rem; 
+}
+
+/* 
+.card:hover{
+    box-shadow: var(--shadow-6);
+    transition:var(--transition-2);
+    cursor: pointer;
+} */
+
+main{
+    overflow: auto;
+}
+.card h6{
+    font-weight:200;
+    text-transform:capitalize;
+    font-size:var(--fs-7);
+    color:black;
+    display: flex;
+    align-items:center;
+    gap:1rem;
+}
+
+.card .icon-lg{
+    font-weight:200;
+    text-transform:capitalize;
+    font-size:var(--fs-5);
+}
+
+.card:hover .icon-lg.muted{
+    color:var(--first-color);
+}
+.card:hover h6{
+    color:var(--first-color);
+    font-weight:900;
+    transition: var(--transition-1);
+}
+
+.tab-form.active{
+    display: block;
+    display: flex;
+}
+
+.tab-form{
+    display: none;
+}
+
+.list-group {
+    width: 100%;
+    gap: 2rem;
+}
+
+.list-group .list-group-item:nth-child(1):hover{
+    background: rgb(218, 218, 218);  
+    transform: translateX(-10px);
+    transition: 0.5s ease-out;
+    color: black;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.list-group i{
+    color: silver;
+    font-size: 3rem;
+}
+
+.list-group small{
+    font-size: 0.93rem;
+    font-weight: 100;
+}
+
+.list-group .ul-title{
+    font-size: 0.93rem;
+    font-weight: 100;
+    text-transform: capitalize;
+}
+
+.list-group .list-group-item:not(:nth-child(1)){
+    background: white;  
+    box-shadow: var(--shadow-1);
+    margin-inline: 1rem;
+    z-index: 999;
+}
+
+.list-group .list-group-item:nth-child(1){
+    border-bottom: 4px solid silver;
+    padding-inline: 1rem;
+    transform: translateX(0);
+    transition: 0.5s ease-out;
+}
+
+.list-group .list-group-item :is(span,i){
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+.list-group .list-group-item > i{
+    margin-left:auto;
+}
+
+.list-group .list-group-item{
+    display:flex;
+   flex-direction: column;
+}
+
+.list-group .list-group-item .top{
+    display:flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+}
+
+.list-group .bottom div{
+    padding:  0.51rem 1rem;
+    color: black;
+    /* background: hsla(219, 73%, 78%, 0.8); */
+}
+
+.list-group .bottom .content{
+    padding:  0.51rem 1rem;
+    color: black;
+    background: white;
+}
+
+.list-group .list-group-item.dropbtn-ul-content{
+    display:none;
+    display:flex;
+    justify-content: start;
+    align-items: center;
+    margin-block: 0.6rem;
+}
+
+.list-group .list-group-item.dropbtn-ul-content.active{
+    display:block;
+}
+
+.list-group .list-group-item .top div:nth-child(1){
+    padding: 0.6rem 2.5rem;
+    background-color: var(--first-color);
+    color: white;
+    font-weight: 900;
+    width: 115px;
+    text-align: center;
+}
+
+.list-group .list-group-item .top div:nth-child(even){
+    padding: 0 1.5rem;
+    font-size: 1rem;
+    font-weight: 900;
+    letter-spacing: 0.1rem;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.precode{
+    background: black;
+    color: wheat;
+    padding: 1rem;
+    border-radius: 0.21rem;
+}

@@ -1,0 +1,36 @@
+.pagination{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding-block: 1rem;
+}
+
+.page-item {
+    background: var(--white);
+    color: var(--first-color);
+    border-radius: var(--radius-circle);
+    align-self: center;
+    padding: 0.8rem 1.3rem;
+}
+
+.page-item a{
+}
+
+.page-item:hover{
+    box-shadow: var(--shadow-2);
+}
+
+.page-item.active{
+    box-shadow: var(--shadow-2);
+    background: var(--first-color);
+    color: var(--white);
+    
+}
+
+.page-item.active a{
+    color: white;
+}
+
+.page-item-link{
+    font-size : 1.5rem;
+}

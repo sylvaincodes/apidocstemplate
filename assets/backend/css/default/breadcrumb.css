@@ -1,0 +1,17 @@
+
+/* ----------------------
+    - Header CSS
+--------------------------*/
+
+.breadcrumbs{
+    box-shadow : var(--shadow-2);
+    width:100%;
+    display:flex;
+    justify-content:space-between;  
+    /* margin-block: 4rem; */
+    padding:1rem 1rem; 
+    z-index: 99;
+}
+.breadcrumbs .left:hover{
+    
+}

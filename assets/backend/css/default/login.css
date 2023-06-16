@@ -1,0 +1,52 @@
+/* ------------------------
+    - Login CSS
+--------------------------*/
+.login-page{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    justify-content:center;
+    gap: 1rem;
+    padding-block: 1.5rem;
+    background-size:cover !important;
+}
+
+.login-box{
+    display:flex;
+    flex-direction:column;
+    gap:3rem;
+    box-shadow : var(--shadow-2);
+    padding:3rem;
+    background: white;
+    margin-inline:auto;
+    max-width:26.5rem !important;
+    justify-content:center;
+}
+
+.login-box.card{
+    box-shadow: var(--shadow-6); 
+}
+
+.login-box .logo{
+    justify-content:center;
+    width: min-content;
+    margin: auto;
+}
+
+.login-box .logo img{
+    border:0.1rem solid white;
+}
+
+.login-form form{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.login-form .input-group .field{
+    /* border-color:white; */
+}
+
+

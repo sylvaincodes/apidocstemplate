@@ -1,0 +1,31 @@
+/*----------------------------------------------------
+  - [CSS CUSTOMISE STYLE SHEET] 
+    ------------
+  - Build by Sylvain Adande : 
+ 
+ * Project: PERSONAL STYLESHEET - CSS
+ * Version: v1.1.1
+ * Copyright 2022-2023
+ * Last Changes: 01 Avril 2023 
+ * Author: Adande Sylvain
+ * Email:      adandesylvain2010@gmail.com
+ * Website:    https://sylvaincodes.github.io/portfolio
+ -----------------------------------------------------*/
+
+/* DEFAULT CSS */
+@import url("./default/animations.css");
+@import url("./default/variables.css");
+@import url("./default/reset.css");
+@import url("./default/custom.css");
+@import url("./default/login.css");
+@import url("./default/header.css");
+@import url("./default/sidebar.css");
+@import url("./default/footer.css");
+@import url("./default/table.css");
+@import url("./default/page.css");
+@import url("./default/breadcrumb.css");
+@import url("./default/pagination.css");
+@import url("./default/modal.css");
+
+/* RESPONSIVE CSS */
+@import url("./repsonsive/responsive.css");
