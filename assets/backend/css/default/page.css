@@ -80,10 +80,6 @@ main{
     cursor: pointer;
 }
 
-.list-group i{
-    color: silver;
-    font-size: 3rem;
-}
 
 .list-group small{
     font-size: 0.93rem;
@@ -108,12 +104,11 @@ main{
     padding-inline: 1rem;
     transform: translateX(0);
     transition: 0.5s ease-out;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-.list-group .list-group-item :is(span,i){
-    font-size: 1rem;
-    font-weight: 100;
-}
 
 .list-group .list-group-item > i{
     margin-left:auto;
@@ -131,6 +126,14 @@ main{
     width: 100%;
 }
 
+.api-content {
+    display: none;
+}
+
+.api-content.active {
+    display: block;
+}
+
 .list-group .bottom div{
     padding:  0.51rem 1rem;
     color: black;
@@ -143,7 +146,7 @@ main{
     background: white;
 }
 
-.list-group .list-group-item.dropbtn-ul-content{
+.list-group .list-group-item.collections-content{
     display:none;
     display:flex;
     justify-content: start;
@@ -151,8 +154,13 @@ main{
     margin-block: 0.6rem;
 }
 
-.list-group .list-group-item.dropbtn-ul-content.active{
-    display:block;
+.list-group .list-group-item .top{
+    box-shadow : var(--shadow-2);
+    padding-inline-end: 1rem;
+}
+
+.collections-dropdown.active > .list-group-item .collections-content{
+    display:block !important;
 }
 
 .list-group .list-group-item .top div:nth-child(1){
@@ -176,8 +184,10 @@ main{
 }
 
 .precode{
-    background: black;
-    color: wheat;
-    padding: 1rem;
-    border-radius: 0.21rem;
+    display: block;
+    overflow-x: auto;
+    padding: 0.5em;
+    background: rgb(51, 51, 51);
+    color: white;
+    max-height: 20rem;
 }

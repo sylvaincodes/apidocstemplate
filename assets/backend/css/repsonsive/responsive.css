@@ -587,9 +587,13 @@
   }
 
   .list-group li.list-group-item div:nth-child(1){
-        width: 151px;
+        width: 100%;
   }
 
+
+  .list-group .list-group-item .top div:nth-child(1) {
+    padding: 0.6rem 0.5rem;
+}
 
 /* Header */
 /* .left-sidebar .collapsible{

@@ -85,15 +85,89 @@ $(window).scroll(function () {
     }
 });
 
-var dropbtn_ul = document.querySelectorAll('.dropbtn-ul');
-$(".dropbtn-ul-content").hide();
+var collections_dropdown = document.querySelectorAll('.collections-dropdown');
+$(".collections-content").hide();
 
-dropbtn_ul.forEach(element => {
-
-  console.log(element);
+collections_dropdown.forEach(element => {
+  
   element.addEventListener('click', function () {
     
-    $(".dropbtn-ul-content").toggle("active");
+    element.getAttribute('data-id');
+
+    console.log(element.parentElement);
+
+    const parent = element.parentElement;
+
+
+    collections_dropdown.forEach(element2 => {
+
+      if (element2.getAttribute('data-id') == element.getAttribute('data-id') ) {
+       
+      }else{
+        
+        element2.classList.remove("active");
+      }
+    });
+
+    const data = parent.children;
+    const isOpen = element.classList.contains("active");
+
+    $(".collections-content").hide();
+
+    if (isOpen) {
+      
+      element.classList.remove('active');
+      for (let i = 1; i < data.length; i++) {
+        data[i].style.display ="none";
+      }
+
+    } else {
+      element.classList.add('active');
+      for (let i = 0; i < data.length; i++) {
+        data[i].style.display ="block";
+      }
+    }
+  })
+
+});
+
+
+
+
+var api = document.querySelectorAll('.api');
+$(".api-content").hide();
+
+api.forEach(elementApi => {
+
+  elementApi.addEventListener('click', function () {
+    
+   const id = elementApi.getAttribute('data-api_id');
+
+   const data =  elementApi.children;
+
+    api.forEach(elementApi2 => {
+
+      console.log(elementApi.getAttribute('data-api_id'));
+      console.log(elementApi2.getAttribute('data-api_id'));
+
+      if (elementApi.getAttribute('data-api_id') == elementApi2.getAttribute('data-api_id') ) {
+       
+        for (let i = 1; i < data.length; i++) {
+          // data[i].style.display = "block";
+          // data[i].toggle('active');
+          $("#content_"+elementApi2.getAttribute('data-api_id')).toggle("active");
+        }
+
+      }else{
+        
+        for (let i = 0; i < data.length; i++) {
+          
+          data[i].classList.toggle('active');
+        }
+
+      }
+    });
+
 
   })
 
