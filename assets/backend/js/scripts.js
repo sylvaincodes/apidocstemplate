@@ -1,6 +1,5 @@
 /* -------------------------
     - All scripts -
-
     1-Modal script
     2-Sidebar script
     3-Header
@@ -9,14 +8,11 @@
 
 $(document).ready(function () {
 
-  // $( document ).tooltip();
-  
   //-------- Modal------------//
   $(".modal-btn").click(function () {
     $(".modal").css("transform", "scale(1)");
     $(".modal").css("transition", "0.2s");
   });
-
 
   $(".close-btn").click(function () {
     $(".modal").css("transform", "translateY(-200%)");
@@ -25,7 +21,6 @@ $(document).ready(function () {
 
   //-------- Sidebar------------//
   $(".btn-sidebar").click(function () {
-    $(".btn-sidebar").css("animation", "shadow 1.5s ease");
     if ($(".collapsible").hasClass("active")) {
       $(".collapsible").removeClass("active");
     } else {
@@ -85,6 +80,10 @@ $(window).scroll(function () {
     }
 });
 
+$(".api-content").click(function () {
+  return false;
+});
+
 var collections_dropdown = document.querySelectorAll('.collections-dropdown');
 $(".collections-content").hide();
 
@@ -93,11 +92,7 @@ collections_dropdown.forEach(element => {
   element.addEventListener('click', function () {
     
     element.getAttribute('data-id');
-
-    console.log(element.parentElement);
-
     const parent = element.parentElement;
-
 
     collections_dropdown.forEach(element2 => {
 

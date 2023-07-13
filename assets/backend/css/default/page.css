@@ -16,11 +16,30 @@
 }
 
 .card{
+    background: white;
     box-shadow : var(--shadow-2);
-    width:100%;
+    /* width:max-content; */
+    margin:auto;
     display:flex;
     padding:4rem 3rem; 
 }
+
+
+.card .header{
+    border-bottom: 1px solid silver;
+    padding: 1rem;
+}
+
+.card .body{
+    border-bottom: 1px solid silver;
+    padding: 1rem;
+}
+
+.card .footer{
+    background: silver;
+
+}
+
 
 /* 
 .card:hover{
@@ -80,6 +99,10 @@ main{
     cursor: pointer;
 }
 
+
+.list-group .api:hover{
+    cursor: pointer;
+}
 
 .list-group small{
     font-size: 0.93rem;

@@ -2,19 +2,21 @@
     - Sidebar CSS
 --------------------------*/
 
-.btn-sidebar{
-    display:none;
-}
 
 .collapsible.active{
     transform: translateX(0%) !important;
 }
 
-.left-sidebar .collapsible{
+.collapsible{
+    transform: translateX(-100%) !important;
+}
+
+.collapsible{
     position: absolute;
     left: 0;
-    top: 87px;
-    background: var(--white);
+    top: 0 !important;
+    background: var(--black);
+    color: rgb(214, 205, 205);
     box-shadow: var(--shadow-2);
     z-index: 9999;
     transform: translateX(-100%);
@@ -24,31 +26,25 @@
     overflow-y: auto;
 }
 
-.menu-item{
-    background: var(--first-color);
-    padding: 1rem;
+.left-sidebar nav ul li {
+    padding-block: 0.5rem;
 }
 
-.collapsible-body{
-    background: var(--white);
-    padding-inline-start: 1rem;
-    padding-block: 1rem;
-    color:black
+.left-sidebar :is(span,a,i){
+    color: rgb(212, 203, 203);
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
-.sousmenu-item:hover{
-    transform: translateX(10%);
-    transition: var(--transition-1);
-}
-.sousmenu-item {
-    padding-block:0.5rem ;
-}
-.sousmenu-item i{
-    font-size: 1.1rem;
-    color:black
+.left-sidebar nav a:hover{
+    color: white;
+    padding-left: 1rem;
+    transition: .5s ease-in-out;
 }
 
-.sousmenu-item span{
-    font-size: 1.1rem;
-    color:black
+.left-sidebar .collapsible > :is(div,nav){
+    color: white;
+    padding:1rem;
 }

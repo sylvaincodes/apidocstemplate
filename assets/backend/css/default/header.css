@@ -1,55 +1,44 @@
 /* ------------------------
     - Header CSS
 --------------------------*/
-.header{
-    width:inherit;
-    display: grid;
-    grid-template-columns : 1fr auto; 
-    position:fixed;
-    box-shadow:var(--shadow-2);
-    padding: 1rem;
-    transform: translateY(-70%);
-    transition : var(--transition-1);
-    z-index: 999999;
-    color: var(--white);
-    background: var(--first-color);
+#header{
+   /* background-image: linear-gradient(to bottom,var(--first-color),black); */
+   background: var(--black);
+
+   padding: 0.2rem;
 }
 
-.header i{
-    color: var(--white);
+#header :is(h1,a) {
+    color: white;
 }
 
-.header:hover{
-    transform: translateY(0%);
-    transition : var(--transition-1);
-    cursor:pointer;
-    box-shadow: var(--shadow-6);
+#header .navbar a {
+    color: silver;
+    font-weight: 100;
 }
 
-.header .icon-sm{
-    font-weight:bold;
-    font-size:var(--fs-7);
+#header .navbar a:is(:hover,:focus) {
+    color: white;
+    font-weight: 900;
+    transform: translateX(20%);
+    transition: .1s ease;
 }
 
-
-.header .logo :is(.dark-logo,.light-logo){
-    position: absolute;
-    left: 0;
-    top: -2px;
-    height: -webkit-fill-available;
+#header .logo {
+    font-family: monospace;
+}
+#header .logo-title {
+   font-size:2.8rem;
 }
 
-.profile-user{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
+#header .navbar {
+    font-family: monospace
 }
 
-.profile-user a{
-    display: inline-flex;
-    align-items: center;
+#header .navbar ul{
+    gap:3rem;
 }
 
-.img-circle{
-    border-radius:var(--radius-circle);
+#navbar{
+    display: none;
 }
